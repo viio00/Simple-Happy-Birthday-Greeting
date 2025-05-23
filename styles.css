@@ -1,0 +1,95 @@
+#titlebar {
+    -webkit-app-region: drag;
+    background-color:#4E4332;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    pointer-events: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+.btn {
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+    margin-left: 6px;
+    margin-top: 5px;
+  }
+
+.btn img {
+    width: 25px;
+    height: 22px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.btn:active img{
+    opacity: 0.6;
+    transform: scale(0.95);
+}
+
+body {
+    background: transparent;
+    overflow: hidden;
+}
+#outerBorder {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 13px solid #4E4332;
+    border-right: 13px solid #4E4332;
+    border-bottom: 12px solid #4E4332;
+}
+#main {
+    background-color: #F8E0EE;
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+
+    border-left: 3px solid #000000;
+    border-right: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    border-top: 3px solid #000000;
+    height: calc(100vh - 70px);
+}
+#cake {
+    position: absolute;
+    width: 240px;
+    height: 240px; 
+    left: 62px;
+    bottom: 130px;
+}
+.middle{
+    position: absolute;
+    bottom: 60px;
+    left: 120px;
+}
+#blow {
+    width: 120px;
+    height: 52px;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+#blow:hover {
+    transform: scale(1.1);
+}
+#blow:active {
+    transform: scale(0.9);
+}
+#musicLeft, #musicRight {
+    width: 60px;
+    height: 60px;
+    top: 100px;
+}
+
+#musicLeft {
+    position: absolute;
+    left: 50px;
+}
+
+#musicRight{
+    position: absolute;
+    right: 50px;
+}
+
